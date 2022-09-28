@@ -1,0 +1,5 @@
+package com.member.registration.dao;
+
+public interface MemberRepo {
+
+}
