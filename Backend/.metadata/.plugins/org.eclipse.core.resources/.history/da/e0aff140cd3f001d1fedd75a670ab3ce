@@ -1,0 +1,20 @@
+package com.member.registration.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.member.registration.dao.MemberBillClaimRepo;
+import com.member.registration.entity.BillClaim;
+
+@Service
+public class BillClaimService {
+
+	@Autowired
+	private MemberBillClaimRepo memberBillClaimRepo;
+
+	public Long submitClaim(BillClaim claim) {
+		BillClaim billClaim = memberBillClaimRepo.save(claim);
+		return billClaim.getId();
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.member.registration.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.member.registration.advice.MemberNotFoundException;
+import com.member.registration.dao.MemberBillClaimRepo;
+import com.member.registration.dao.MemberRepo;
+import com.member.registration.entity.BillClaim;
+import com.member.registration.entity.Member;
+
+@Service
+public class BillClaimService {
+
+	@Autowired
+	private MemberBillClaimRepo memberBillClaimRepo;
+
+	@Autowired
+	private MemberRepo memberRepo;
+
+	public Long submitClaim(BillClaim claim) throws MemberNotFoundException {
+
+		Member member = memberRepo.findByName(claim.getName());
+		if (member != null) {
+			claim.setId(10000L);
+			BillClaim billClaim = memberBillClaimRepo.save(claim);
+			return billClaim.getId();
+		} else {
+			throw new MemberNotFoundException("Member Details Not with Name :" + claim.getName());
+		}
+	}
+
+}

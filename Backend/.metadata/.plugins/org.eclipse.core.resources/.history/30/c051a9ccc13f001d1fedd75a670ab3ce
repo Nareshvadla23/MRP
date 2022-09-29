@@ -1,0 +1,5 @@
+package com.member.registration.service;
+
+public class SequenceIdGenerator {
+
+}

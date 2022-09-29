@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MemberControllerTest" project="MemberRegistrationPortal" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.member.registration.controller.MemberControllerTest" time="1.105" displayname="MemberControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.member.registration.controller.MemberControllerTest]">
+    <testcase name="testUpdateMember" classname="com.member.registration.controller.MemberControllerTest" time="1.002" displayname="testUpdateMember()" uniqueid="[engine:junit-jupiter]/[class:com.member.registration.controller.MemberControllerTest]/[method:testUpdateMember()]"/>
+    <testcase name="testSaveMember" classname="com.member.registration.controller.MemberControllerTest" time="0.093" displayname="testSaveMember()" uniqueid="[engine:junit-jupiter]/[class:com.member.registration.controller.MemberControllerTest]/[method:testSaveMember()]"/>
+    <testcase name="testGetMemberByName" classname="com.member.registration.controller.MemberControllerTest" time="0.01" displayname="testGetMemberByName()" uniqueid="[engine:junit-jupiter]/[class:com.member.registration.controller.MemberControllerTest]/[method:testGetMemberByName()]"/>
+  </testsuite>
+</testrun>
